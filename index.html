@@ -1,11 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test page</title>
+    <title>Портфолио Исюк Никита</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <h1>Hello</h1>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo">Портфолио</div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="menu-toggle">
+                    <span class="hamburger"></span>
+                </button>
+            </nav>
+        </header>
+        <main>
+            <section id="about" class="about">
+                <h1>About Me</h1>
+                <p>Hello! I am a developer without experience in any development. I love creating responsive and
+                    user-friendly apps.</p>
+            </section>
+            <section id="skills" class="skills">
+                <h1>Skills</h1>
+                <div class="skills-grid">
+                    <div class="skill">
+                        <h2>Languages</h2>
+                        <ul>
+                            <li skill-weight="5">C#</li>
+                            <li skill-weight="4">SQL</li>
+                            <li skill-weight="3">XAML</li>
+                        </ul>
+                    </div>
+                    <div class="skill">
+                        <h2>Frameworks</h2>
+                        <ul>
+                            <li skill-weight="5">.NET</li>
+                            <li skill-weight="4">WPF</li>
+                            <li skill-weight="3">Entity Framework</li>
+                            <li skill-weight="3">Linq</li>
+                            <li skill-weight="2">ASP.NET Core</li>
+                        </ul>
+                    </div>
+                    <div class="skill">
+                        <h2>Instruments</h2>
+                        <ul>
+                            <li skill-weight="5">Mockoon</li>
+                            <li skill-weight="4">Rest API</li>
+                            <li skill-weight="4">JSON</li>
+                            <li skill-weight="4">Visual Studio</li>
+                            <li skill-weight="4">Postman</li>
+                            <li skill-weight="3">Git</li>
+                            <li skill-weight="2">MongoDB</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </section>
+            <section id="projects" class="projects">
+                <h1>Projects</h1>
+                <div class="project-grid">
+                    <div class="project">
+                        <h2>Project 1</h2>
+                        <p>Description of project 1.</p>
+                    </div>
+                    <div class="project">
+                        <h2>Project 2</h2>
+                        <p>Description of project 2.</p>
+                    </div>
+                    <div class="project">
+                        <h2>Project 3</h2>
+                        <p>Description of project 3.</p>
+                    </div>
+                    <div class="project">
+                        <h2>Project 4</h2>
+                        <p>Description of project 4.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="contact">
+                <h1>Contact Me</h1>
+                <p>Email: developer@example.com</p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Исюк Никита</p>
+        </footer>
+    </div>
+    <script src="scripts.js"></script>
 </body>
+
 </html>
