@@ -1,15 +1,17 @@
-
 body {
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
 }
 
 .container {
-    max-width: 1024px; /* Set your desired maximum width */
-    margin: 0 auto; /* Center align the container */
-    padding: 0 0; /* Optional padding */
+    max-width: 1024px;
+    /* Set your desired maximum width */
+    margin: 0 auto;
+    /* Center align the container */
+    padding: 0 0;
+    /* Optional padding */
 }
 
 header {
@@ -81,9 +83,26 @@ nav ul li a {
     top: 8px;
 }
 
-.about, .projects, .skills, .contact {
+.about,
+.projects,
+.skills,
+.contact {
     padding: 2rem;
     text-align: center;
+}
+
+.about .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about .avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
 }
 
 .project-grid {
@@ -91,6 +110,50 @@ nav ul li a {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
     padding: 1rem;
+}
+
+.project .technologies {
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.project .technologies h4 {
+    margin-bottom: 0.5rem;
+}
+
+.project p {
+    text-align: left;
+}
+
+.project a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: white;
+    background-color: #007BFF;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.project a:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.project .technologies ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.project .technologies ul li {
+    background: #ddd;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    display: inline-block;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .skills-grid {
@@ -124,22 +187,42 @@ nav ul li a {
 
 .skill ul li[skill-weight="1"] {
     color: #00000033;
+    font-size: 0.6rem;
+    font-weight: 300;
 }
 
 .skill ul li[skill-weight="2"] {
     color: #00000066;
+    font-size: 0.7rem;
+    font-weight: 400;
 }
 
 .skill ul li[skill-weight="3"] {
     color: #00000099;
+    font-size: 0.8rem;
+    font-weight: 600;
 }
 
 .skill ul li[skill-weight="4"] {
     color: #000000CC;
+    font-size: 0.9rem;
+    font-weight: 600;
 }
 
 .skill ul li[skill-weight="5"] {
     color: #000000FF;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.contact a {
+    margin: 0.5rem;
+    text-decoration: none;
+}
+
+.contact a img {
+    width: 30px;
+    height: 30px;
 }
 
 footer {
@@ -155,7 +238,7 @@ footer {
         flex-direction: column;
         width: 100%;
         position: absolute;
-        top: 60px; 
+        top: 60px;
         left: 0;
         background-color: #333;
     }

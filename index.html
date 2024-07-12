@@ -25,15 +25,24 @@
         </header>
         <main>
             <section id="about" class="about">
-                <h1>About Me</h1>
-                <p>Hello! I am a developer without experience in any development. I love creating responsive and
-                    user-friendly apps.</p>
+                <div class="avatar">
+                    <img src="resources/profile.jpeg" />
+                </div>
+                <h1>О себе</h1>
+                <p>Я являюсь выпускником Донецкого государственного 
+                    университета с глубюоким пониманием компьютерных 
+                    наук. В течении учебы я активно занимался созданием как 
+                    низкоуровневых системных приложений так и 
+                    высокоуровневых мобильных приложений. Мой опыт позволяет
+                     мне гибко адаптироваться к различным задачам в
+                      программировании и стремиться к постоянному
+                       профессиональному росту.</p>
             </section>
             <section id="skills" class="skills">
-                <h1>Skills</h1>
+                <!-- <h1>Скиллы</h1> -->
                 <div class="skills-grid">
                     <div class="skill">
-                        <h2>Languages</h2>
+                        <h2>Языки</h2>
                         <ul>
                             <li skill-weight="5">C#</li>
                             <li skill-weight="4">SQL</li>
@@ -41,22 +50,23 @@
                         </ul>
                     </div>
                     <div class="skill">
-                        <h2>Frameworks</h2>
+                        <h2>Фреймворки</h2>
                         <ul>
                             <li skill-weight="5">.NET</li>
-                            <li skill-weight="4">WPF</li>
-                            <li skill-weight="3">Entity Framework</li>
-                            <li skill-weight="3">Linq</li>
-                            <li skill-weight="2">ASP.NET Core</li>
+                            <li skill-weight="5">WPF</li>
+                            <li skill-weight="4">Entity Framework</li>
+                            <li skill-weight="4">Linq</li>
+                            <li skill-weight="3">ASP.NET Core</li>
                         </ul>
                     </div>
                     <div class="skill">
-                        <h2>Instruments</h2>
+                        <h2>Инструменты</h2>
                         <ul>
                             <li skill-weight="5">Mockoon</li>
-                            <li skill-weight="4">Rest API</li>
+                            <li skill-weight="5">Visual Studio</li>
+                            <li skill-weight="4">MS SQL Server</li>
                             <li skill-weight="4">JSON</li>
-                            <li skill-weight="4">Visual Studio</li>
+                            <li skill-weight="4">Rest API</li>
                             <li skill-weight="4">Postman</li>
                             <li skill-weight="3">Git</li>
                             <li skill-weight="2">MongoDB</li>
@@ -66,29 +76,69 @@
 
             </section>
             <section id="projects" class="projects">
-                <h1>Projects</h1>
+                <h1>Проекты</h1>
                 <div class="project-grid">
                     <div class="project">
-                        <h2>Project 1</h2>
-                        <p>Description of project 1.</p>
+                        <h2>Приложение для учета финансов</h2>
+                        <p>Это приложение было разработано в рамках
+                            курсового проекта и представляет собой
+                            классическое CRUD-приложение. Данные
+                            визуализируются с помощью различных
+                            графиков, что обеспечивает удобный
+                            анализ информации. Кроме того, приложение
+                            позволяет собирать данные за определенный
+                            период и генерировать отчеты.
+                        </p>
+                        <div class="technologies">
+                            <h4>Стек</h4>
+                            <ul>
+                                <li>WPF</li>
+                                <li>C#</li>
+                                <li>.NET</li>
+                                <li>MS SQL Server</li>
+                                <li>Entity Framework</li>
+                                <li>xUnit</li>
+                            </ul>
+                        </div>
+                        <a href="https://github.com/Nikiroiduk/CourseProjectFall2022">Репозиторий проекта</a>
                     </div>
                     <div class="project">
-                        <h2>Project 2</h2>
-                        <p>Description of project 2.</p>
-                    </div>
-                    <div class="project">
-                        <h2>Project 3</h2>
-                        <p>Description of project 3.</p>
-                    </div>
-                    <div class="project">
-                        <h2>Project 4</h2>
-                        <p>Description of project 4.</p>
+                        <h2>Rest API для мобильного приложения</h2>
+                        <p>Бэкенд для мобильного фитнес-трекера,
+                            обеспечивающий разграничение доступа для
+                            различных типов пользователей с
+                            использованием ролевых клеймов.
+                            Авторизация и аутентификация пользователей
+                            осуществляются с помощью JSON Web Token
+                            (JWT).
+                        </p>
+                        <div class="technologies">
+                            <h4>Стек</h4>
+                            <ul>
+                                <li>C#</li>
+                                <li>MS SQL Server</li>
+                                <li>ASP.NET Core</li>
+                                <li>Postman</li>
+                                <li>Entity Framework</li>
+                                <li>MSTest</li>
+                            </ul>
+                        </div>
+                        <a href="https://github.com/Nikiroiduk/CourseProjectSpring2023/tree/master/API">Репозиторий
+                            проекта</a>
                     </div>
                 </div>
             </section>
             <section id="contact" class="contact">
-                <h1>Contact Me</h1>
-                <p>Email: developer@example.com</p>
+                <h1>Связь</h1>
+                <a href="mailto:Nikita.Isyuk@outlook.com">
+                    <img src="resources/ico/email.svg" alt="Email" />
+                </a>
+                <a href="https://t.me/nikiroiduk">
+                    <img src="resources/ico/telegram.svg" alt="Telegram" />
+                </a>
+                <a href="https://vk.com/nikiroiduk">
+                    <img src="resources/ico/vk.svg" alt="VK" />
+                </a>
             </section>
         </main>
         <footer>
